@@ -1,0 +1,153 @@
+.kalam-light {
+    font-family: "Kalam", cursive;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.kalam-regular {
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kalam-bold {
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+h1 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 3.75rem; /* 60px / 16 = 3.75rem */
+    background-color: rgb(196, 129, 248);
+    padding-top: 1.25rem; /* 20px / 16 = 1.25rem */
+    border-bottom: 0.3125rem dotted black; /* 5px / 16 = 0.3125rem */
+    font-weight: bolder;
+}
+
+.section {
+    min-height: 56.25rem; /* 900px / 16 = 56.25rem */
+    padding-top: 1.25rem; /* 20px / 16 = 1.25rem */
+    border-bottom: 0.3125rem dotted black; /* 5px / 16 = 0.3125rem */
+}
+
+.purple {
+    background-color: rgb(196, 129, 248);
+}
+
+.yellow {
+    background-color: rgb(226, 249, 120);
+}
+
+.section-heading {
+    font-size: 3.125rem; /* 50px / 16 = 3.125rem */
+    text-align: center;
+}
+
+.section-body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 2.1875rem; /* 35px / 16 = 2.1875rem */
+}
+
+.section-body-message {
+    width: 50%;
+}
+
+.section-body-message-heading {
+    text-align: center;
+    font-size: 2.5rem; /* 40px / 16 = 2.5rem */
+}
+
+.section-body-message-body {
+    padding: 3.125rem; /* 50px / 16 = 3.125rem */
+    font-size: 1.25rem; /* 20px / 16 = 1.25rem */
+}
+
+.section-body-img {
+    margin: auto;
+    display: block;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    height: 40.625rem;
+    border-radius: 0.1875rem; 
+}
+
+
+.conclusion-points {
+    font-size: 1.875rem; /* 30px / 16 = 1.875rem */
+}
+
+.conclusion {
+    padding: 2.5rem 12.5rem; /* 40px 200px / 16 = 2.5rem 12.5rem */
+    font-size: 1.5625rem; /* 25px / 16 = 1.5625rem */
+}
+
+a {
+    color: blue;
+}
+/*  * Media Queries for mobile responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem; /* Smaller font size for mobile */
+        padding-top: 0.75rem; /* Less padding on mobile */
+        border-bottom-width: 0.1875rem; /* Thinner border */
+    }
+
+    .section {
+        min-height: 30rem; /* Reduced min height for mobile */
+        padding-top: 1rem;
+    }
+
+    .section-heading {
+        font-size: 2rem; /* Smaller font size for headings */
+    }
+
+    .section-body {
+        flex-direction: column; /* Stacks content vertically */
+        padding-top: 1.25rem; /* Reduced padding */
+    }
+
+    .section-body-message {
+        width: 100%; /* Full width for message and image */
+
+    }
+    .section-body-img{
+        transform: translateY(0%);
+        margin-bottom: 3em;
+    }
+
+    .section-body-message-heading {
+        font-size: 1.75rem; /* Smaller heading for mobile */
+    }
+
+    .section-body-message-body {
+        padding: 1.25rem; /* Less padding for mobile */
+        font-size: 1rem; /* Reduced font size */
+    }
+
+    .section-body-img {
+        height: auto; /* Adjust image height for responsiveness */
+        max-height: 20rem; /* Set a max height */
+    }
+
+    .conclusion-points {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+
+    .conclusion {
+        padding: 1.5rem 2.5rem; /* Adjust padding */
+        font-size: 1.25rem; /* Reduced font size */
+    }
+}
